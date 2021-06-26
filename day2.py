@@ -7,15 +7,15 @@ Then, the output should be:
 ['34', '67', '55', '33', '12', '98']
 ('34', '67', '55', '33', '12', '98')"""
 
-# def listTupleGenerator():
-#     numberSequence = input('Enter sequence of numbers separated by comma: ')
-#     listedSequence = numberSequence.split(",")
-#
-#     print(listedSequence)
-#     print(tuple(listedSequence))
-#
-#
-# listTupleGenerator()
+def listTupleGenerator():
+    numberSequence = input('Enter sequence of numbers separated by comma: ')
+    listedSequence = numberSequence.split(",")
+
+    print(listedSequence)
+    print(tuple(listedSequence))
+
+
+listTupleGenerator()
 
 """Question:
 Define a class which has at least two methods:
@@ -26,24 +26,24 @@ Also please include simple test function to test the class methods.
 
 Hints:
 Use init method to construct some parameters"""
-# class twoMethods:
-#
-#     def getString(self):
-#         while True:
-#             try:
-#                 self.text = input('Enter some text: ')
-#                 return self.text
-#                 break
-#             except:
-#                 print("Please enter text")
-#
-#     def printString(self):
-#         self.capitalizedText = self.text.upper()
-#         return print(self.capitalizedText)
-#
-# someText = twoMethods()
-# someText.getString()
-# someText.printString()
+class twoMethods:
+
+    def getString(self):
+        while True:
+            try:
+                self.text = input('Enter some text: ')
+                return self.text
+                break
+            except:
+                print("Please enter text")
+
+    def printString(self):
+        self.capitalizedText = self.text.upper()
+        return print(self.capitalizedText)
+
+someText = twoMethods()
+someText.getString()
+someText.printString()
 
 """Write a program that calculates and prints the value according to the given formula:
 
@@ -64,6 +64,21 @@ Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output
 received is 26.0, it should be printed as 26).In case of input data being supplied to the question, it should be
 assumed to be a console input."""
+import math
+
+def calculatesFormula():
+    result = []
+    D = input("Enter three numbers separated by comma: ")
+    D = D.split(",")
+    for _ in D:
+        C = 50
+        H = 30
+        Q = math.sqrt((2 * C * int(_))/H)
+        Q = int(Q)
+        result.append((str(Q)))
+
+    str1 = ','.join(result)
+    print(str1)
 
 
-
+calculatesFormula()
