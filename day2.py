@@ -114,21 +114,17 @@ def arrayGenerator():
     for i in range(0, len(numbers)):
         numbers[i] = int(numbers[i])
     numbers = tuple(numbers)
-
     rows, cols = numbers
     arr = []
-
     for i in range(rows):
         col = []
         for j in range(cols):
             col.append(j)
         arr.append(col)
-
     arr1 = np.array(arr)
     arr2 = []
     for l in range(len(arr1)):
          arr2.append(((arr1[l] * l).tolist()))
-
     print(arr2)
 
 
