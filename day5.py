@@ -18,9 +18,9 @@ def squareEachOddNumber():
     for number in sequence:
         number = int(number)
         if number % 2 != 0:
-            squaredNumbers.append(number**2)
+            squaredNumbers.append(str(number**2))
 
-    print(squaredNumbers)
+    print(", ".join(squaredNumbers))
 
 
 squareEachOddNumber()
