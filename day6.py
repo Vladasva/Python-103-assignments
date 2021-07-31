@@ -26,25 +26,25 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
-# def checkPasswords():
-#     passwords = input("Please, enter some passwords: ")
-#     passwords = passwords.split(", ")
-#     correctPassword = []
-#     for password in passwords:
-#         if 6 <= len(password) <= 12:
-#             if any(chr.isdigit() for chr in password):
-#                 if any(chr1.isalpha() for chr1 in password):
-#                     if any(chr2.islower() for chr2 in password):
-#                         if any(chr3.isupper() for chr3 in password):
-#                             if any(chr4 == "$" or chr4 == "#" or chr4 == "@" for chr4 in password):
-#                                 correctPassword.append(password)
-#             else:
-#                 print("Any of passwords are not correct.")
-#
-#     print(", ".join(correctPassword))
-#
-#
-# checkPasswords()
+def checkPasswords():
+    passwords = input("Please, enter some passwords: ")
+    passwords = passwords.split(", ")
+    correctPassword = []
+    for password in passwords:
+        if 6 <= len(password) <= 12:
+            if any(chr.isdigit() for chr in password):
+                if any(chr1.isalpha() for chr1 in password):
+                    if any(chr2.islower() for chr2 in password):
+                        if any(chr3.isupper() for chr3 in password):
+                            if any(chr4 == "$" or chr4 == "#" or chr4 == "@" for chr4 in password):
+                                correctPassword.append(password)
+            else:
+                print("Any of passwords are not correct.")
+
+    print(", ".join(correctPassword))
+
+
+checkPasswords()
 
 """
 Question 19:
