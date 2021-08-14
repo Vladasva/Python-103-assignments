@@ -21,7 +21,6 @@ class Divisible:
             if number % 7 == 0:
                 yield number
 
-
 divisible = Divisible()
 generator = divisible.bySeven(int(input("Please enter number: ")))
 for number in generator:
