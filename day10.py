@@ -10,7 +10,7 @@ loops.
 
 def squareDictionaryOneToTwenty():
     squaredOneToTwenty = {}
-    for _ in range(1, 20):
+    for _ in range(1, 20+1):
         if _ > 0:
             squaredOneToTwenty[_] = (_ ** 2)
 
@@ -28,3 +28,15 @@ Hints:
 Use dict[key]=value pattern to put entry into a dictionary.Use ** operator to get power of a number.Use range() for 
 loops.Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 """
+
+def squareDictionaryOneToTwenty():
+    squaredOneToTwenty = {}
+    for _ in range(1, 20+1):
+        if _ > 0:
+            squaredOneToTwenty[_] = (_ ** 2)
+
+    print(squaredOneToTwenty.keys())
+
+
+squareDictionaryOneToTwenty()
+
