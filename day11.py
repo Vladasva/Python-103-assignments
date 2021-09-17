@@ -7,13 +7,13 @@ Hints:
 Use [n1:n2] notation to get a slice from a tuple.
 """
 
-def divideTuple():
-    wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    print(wholeTuple[0:5])
-    print(wholeTuple[-5:])
-
-
-divideTuple()
+# def divideTuple():
+#     wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+#     print(wholeTuple[0:5])
+#     print(wholeTuple[-5:])
+#
+#
+# divideTuple()
 
 """
 Question 39:
@@ -24,11 +24,30 @@ Hints:
 Use "for" to iterate the tuple. Use tuple() to generate a tuple from a list.
 """
 
-def printEvenNumbersFromTuple():
-    wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    for _ in wholeTuple:
-        if _ % 2 == 0:
-            print(_)
+# def printEvenNumbersFromTuple():
+#     wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+#     for _ in wholeTuple:
+#         if _ % 2 == 0:
+#             print(_)
+#
+#
+# printEvenNumbersFromTuple()
+
+"""
+Question 40:
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise 
+print "No".
+
+Hints:
+Use if statement to judge condition.
+"""
+
+def printYes():
+    stringInput = str(input("Enter any string: "))
+    if stringInput.upper() == "YES":
+        print("Yes")
+    else:
+        print("No")
 
 
-printEvenNumbersFromTuple()
+printYes()
