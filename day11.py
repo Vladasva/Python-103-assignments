@@ -64,3 +64,19 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 squaredNumbers = map(lambda number: number ** 2, numbers)
 print(list(squaredNumbers))
+
+"""
+Question 42:
+Write a program which can map() and filter() to make a list whose elements are square of even number in 
+[1,2,3,4,5,6,7,8,9,10].
+
+Hints:
+Use map() to generate a list.Use filter() to filter elements of a list.Use lambda to define anonymous functions.
+"""
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+evenNumbers = filter(lambda number: number % 2 == 0, numbers)
+
+squaredNumbers = map(lambda number: number ** 2, evenNumbers)
+print(list(squaredNumbers))
