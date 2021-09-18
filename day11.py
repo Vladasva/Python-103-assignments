@@ -7,13 +7,13 @@ Hints:
 Use [n1:n2] notation to get a slice from a tuple.
 """
 
-# def divideTuple():
-#     wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-#     print(wholeTuple[0:5])
-#     print(wholeTuple[-5:])
-#
-#
-# divideTuple()
+def divideTuple():
+    wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    print(wholeTuple[0:5])
+    print(wholeTuple[-5:])
+
+
+divideTuple()
 
 """
 Question 39:
@@ -24,14 +24,14 @@ Hints:
 Use "for" to iterate the tuple. Use tuple() to generate a tuple from a list.
 """
 
-# def printEvenNumbersFromTuple():
-#     wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-#     for _ in wholeTuple:
-#         if _ % 2 == 0:
-#             print(_)
-#
-#
-# printEvenNumbersFromTuple()
+def printEvenNumbersFromTuple():
+    wholeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    for _ in wholeTuple:
+        if _ % 2 == 0:
+            print(_)
+
+
+printEvenNumbersFromTuple()
 
 """
 Question 40:
@@ -43,7 +43,7 @@ Use if statement to judge condition.
 """
 
 def printYes():
-    stringInput = str(input("Enter any string: "))
+    stringInput = input("Enter any string: ")
     if stringInput.upper() == "YES":
         print("Yes")
     else:
@@ -51,3 +51,16 @@ def printYes():
 
 
 printYes()
+
+"""
+Question 41:
+Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+
+Hints:
+Use map() to generate a list.Use lambda to define anonymous functions.
+"""
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squaredNumbers = map(lambda number: number ** 2, numbers)
+print(list(squaredNumbers))
