@@ -80,3 +80,16 @@ evenNumbers = filter(lambda number: number % 2 == 0, numbers)
 
 squaredNumbers = map(lambda number: number ** 2, evenNumbers)
 print(list(squaredNumbers))
+
+"""
+Question 43:
+Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
+
+Hints:
+Use filter() to filter elements of a list. Use lambda to define anonymous functions.
+"""
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+evenNumbers = filter(lambda number: number % 2 == 0, numbers)
+print(list(evenNumbers))
