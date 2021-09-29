@@ -11,3 +11,20 @@ def sqr(x):
 
 squaredNumbers = list(map(sqr, range(1, 21)))
 print(squaredNumbers)
+
+"""
+Question 45:
+Define a class named American which has a static method called printNationality.
+
+Hints:
+Use @staticmethod decorator to define class static method.There are also two more methods.To know more, go to this 
+https://realpython.com/instance-class-and-static-methods-demystified/.
+"""
+
+class American:
+    @staticmethod
+    def printNationality():
+        print("I am American")
+
+american = American()
+american.printNationality()
