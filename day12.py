@@ -28,3 +28,26 @@ class American:
 
 american = American()
 american.printNationality()
+
+"""
+Question 46:
+Define a class named American and its subclass NewYorker.
+
+Hints:
+Use class Subclass(ParentClass) to define a subclass.*
+"""
+
+class American:
+    @staticmethod
+    def printNationality():
+        print("I am American")
+
+class NewYorker(American):
+    pass
+
+
+american = American()
+newYorker = NewYorker()
+
+print(american)
+print(newYorker)
