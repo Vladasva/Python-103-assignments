@@ -37,10 +37,8 @@ Hints:
 Use class Subclass(ParentClass) to define a subclass.*
 """
 
-class American:
-    @staticmethod
-    def printNationality():
-        print("I am American")
+class American():
+   pass
 
 class NewYorker(American):
     pass
