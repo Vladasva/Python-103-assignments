@@ -69,3 +69,14 @@ Asqr = Square(5)
 print(Asqr.area())
 
 print(Square().area())
+
+"""
+Question 50;
+Please raise a RuntimeError exception.
+
+Hints
+Use raise() to raise an exception.
+
+"""
+
+raise RuntimeError('something wrong')
