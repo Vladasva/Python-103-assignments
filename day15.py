@@ -62,6 +62,17 @@ Hints
 Use u'strings' format to define unicode string.
 """
 
-unicodeString = u"hello world"
-print(unicodeString)
+# unicodeString = u"hello world"
+# print(unicodeString)
 
+"""
+Question 57:
+Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
+
+Hints
+Use unicode()/encode() function to convert.
+"""
+
+s = input()
+u = s.encode('utf-8')
+print(u)
