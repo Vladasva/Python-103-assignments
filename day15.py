@@ -15,16 +15,16 @@ Hints
 Use \w to match letters.
 """
 
-import re
-
-def printDomain():
-    email = str(input("Please, enter some email: "))
-    pattern = "\w+@(\w+).com"
-    domain = re.findall(pattern, email)
-    print(domain)
-
-
-printDomain()
+# import re
+#
+# def printDomain():
+#     email = str(input("Please, enter some email: "))
+#     pattern = "\w+@(\w+).com"
+#     domain = re.findall(pattern, email)
+#     print(domain)
+#
+#
+# printDomain()
 
 """
 Question 55:
@@ -43,15 +43,25 @@ Hints
 Use re.findall() to find all substring using regex.
 """
 
-import re
+# import re
+#
+# def printNumbers():
+#     sentence = str(input("Please, enter some text with numbers: "))
+#     pattern = "\d+"
+#     numbers = re.findall(pattern, sentence)
+#     print(numbers)
+#
+#
+# printNumbers()
 
-def printNumbers():
-    sentence = str(input("Please, enter some text with numbers: "))
-    pattern = "\d+"
-    numbers = re.findall(pattern, sentence)
-    print(numbers)
+"""
+Question 56:
+Print a unicode string "hello world".
 
+Hints
+Use u'strings' format to define unicode string.
+"""
 
-printNumbers()
-
+unicodeString = u"hello world"
+print(unicodeString)
 
