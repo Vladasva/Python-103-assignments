@@ -15,16 +15,16 @@ Hints
 Use \w to match letters.
 """
 
-import re
-
-def printDomain():
-    email = str(input("Please, enter some email: "))
-    pattern = "\w+@(\w+).com"
-    domain = re.findall(pattern, email)
-    print(domain)
-
-
-printDomain()
+# import re
+#
+# def printDomain():
+#     email = str(input("Please, enter some email: "))
+#     pattern = "\w+@(\w+).com"
+#     domain = re.findall(pattern, email)
+#     print(domain)
+#
+#
+# printDomain()
 
 """
 Question 55:
@@ -43,16 +43,16 @@ Hints
 Use re.findall() to find all substring using regex.
 """
 
-import re
-
-def printNumbers():
-    sentence = str(input("Please, enter some text with numbers: "))
-    pattern = "\d+"
-    numbers = re.findall(pattern, sentence)
-    print(numbers)
-
-
-printNumbers()
+# import re
+#
+# def printNumbers():
+#     sentence = str(input("Please, enter some text with numbers: "))
+#     pattern = "\d+"
+#     numbers = re.findall(pattern, sentence)
+#     print(numbers)
+#
+#
+# printNumbers()
 
 """
 Question 56:
@@ -62,8 +62,8 @@ Hints
 Use u'strings' format to define unicode string.
 """
 
-unicodeString = u"hello world"
-print(unicodeString)
+# unicodeString = u"hello world"
+# print(unicodeString)
 
 """
 Question 57:
@@ -73,9 +73,9 @@ Hints
 Use unicode()/encode() function to convert.
 """
 
-s = input()
-u = s.encode('utf-8')
-print(u)
+# s = input()
+# u = s.encode('utf-8')
+# print(u)
 
 """
 Question 58:
@@ -85,3 +85,39 @@ Hints
 Use unicode() function to convert.
 """
 # -*- coding: utf-8 -*-
+
+"""
+Question 59:
+Question
+Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
+
+Example: If the following n is given as input to the program:
+
+5
+Then, the output of the program should be:
+
+3.55
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints
+Use float() to convert an integer to a float.Even if not converted it wont cause a problem because python by default 
+understands the data type of a value
+"""
+
+def calculateSomeFormula():
+    while True:
+        try:
+            number = int(input("Enter a number: "))
+            result = 0
+
+            for n in range(number+1):
+                if n > 0:
+                    result += (n/(n+1))
+
+            print(round(result, 2))
+            break
+        except ValueError:
+            print("Please, enter an integer not a string or float!")
+
+
+calculateSomeFormula()
